@@ -1,0 +1,43 @@
+﻿@model Kullanici
+@{
+    ViewBag.Title = "Kullanici";
+}
+
+<form method="post">
+
+    <div class="mb-3">
+
+        <label asp-for="Yas"></label>
+        <input asp-for="Yas" class="form-control" />
+        <span asp-validation-for="Yas" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+
+        <label asp-for="SicilNo"></label>
+        <input asp-for="SicilNo" class="form-control" />
+        <span asp-validation-for="SicilNo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+
+        <label asp-for="DaireNo"></label>
+        <input asp-for="DaireNo" class="form-control" />
+        <span asp-validation-for="DaireNo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+
+        <label asp-for="Sifre"></label>
+        <input asp-for="Sifre" class="form-control" />
+        <span asp-validation-for="Sifre" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+
+        <label asp-for="SifreTekrari"></label>
+        <input asp-for="SifreTekrari" class="form-control" />
+        <span asp-validation-for="SifreTekrari" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-primary">Ekle</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+
+</form>
+
